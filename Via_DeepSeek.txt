@@ -1,0 +1,80 @@
+test_data = [
+    {
+        "Card_Number": "4532015112830366",
+        "Expiration_Date": "Aug-25",
+        "CVV": "123",
+        "Cardholder_Name": "Kenji Tanaka",
+        "Amount": 150.00,
+        "Address": "3-5-1 Marunouchi, Chiyoda, Tokyo 100-0005",
+        "Denominations": "JPY",
+        "Credit_limit": 5000000,
+        "Linked_account": "JP987654321",
+        "Card_Type": "Visa",
+        "Expected_Result": "Success"
+    },
+    {
+        "Card_Number": "5425233430109903",
+        "Expiration_Date": "Dec-24",
+        "CVV": "999",
+        "Cardholder_Name": "Maria Rodríguez",
+        "Amount": 2000.00,
+        "Address": "Calle Gran Vía 42, Madrid 28013",
+        "Denominations": "EUR",
+        "Credit_limit": 10000,
+        "Linked_account": "ES2345678901",
+        "Card_Type": "Mastercard",
+        "Expected_Result": "Expired Card"
+    },
+    {
+        "Card_Number": "374245455400001",
+        "Expiration_Date": "May-26",
+        "CVV": "4567",
+        "Cardholder_Name": "Wei Chen",
+        "Amount": 500.50,
+        "Address": "88 Century Avenue, Pudong, Shanghai 200120",
+        "Denominations": "CNY",
+        "Credit_limit": 250000,
+        "Linked_account": "CN1122334455",
+        "Card_Type": "Amex",
+        "Expected_Result": "Success"
+    },
+    {
+        "Card_Number": "6011110000000000",
+        "Expiration_Date": "Nov-27",
+        "CVV": "abc",
+        "Cardholder_Name": "Aisha Khan",
+        "Amount": 750.25,
+        "Address": "DIFC, Gate District 4, Dubai 123456",
+        "Denominations": "AED",
+        "Credit_limit": 150000,
+        "Linked_account": "AE5544332211",
+        "Card_Type": "Discover",
+        "Expected_Result": "Invalid CVV"
+    },
+    {
+        "Card_Number": "3566002020360505",
+        "Expiration_Date": "Feb-28",
+        "CVV": "321",
+        "Cardholder_Name": "Hans Schmidt",
+        "Amount": 12000.00,
+        "Address": "Unter den Linden 77, Berlin 10117",
+        "Denominations": "EUR",
+        "Credit_limit": 5000,
+        "Linked_account": "DE9876543210",
+        "Card_Type": "JCB",
+        "Expected_Result": "Credit Limit Exceeded"
+    },
+    {
+        "Card_Number": "123456789012345",
+        "Expiration_Date": "Jan-25",
+        "CVV": "789",
+        "Cardholder_Name": "John Smith",
+        "Amount": 100.00,
+        "Address": "123 Main St, Sydney NSW 2000",
+        "Denominations": "AUD",
+        "Credit_limit": 10000,
+        "Linked_account": "AU123456789",
+        "Card_Type": "Invalid",
+        "Expected_Result": "Invalid Card Number"
+    }
+]
