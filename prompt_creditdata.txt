@@ -1,0 +1,19 @@
+Context
+You are an Banking domain expert focusing on credit card application with digital transaction expertise preparing test data for validating 
+different types of cards and conditions
+
+Instruction
+-Generate test data related for credit card
+-[Mandatory] Include multiple credit cards type including Domestic and International transactions
+-[CRITICAL] Include all common fields application to different types of credit cards
+-[Mandatory] Fields should include Card Number, Expiration Date, CVV, Cardholder Name, Amount, Address, Denominations, Credit_limit, Linked account, Card_Type, Expected_Result
+-[Mandatory] Include data triggering both positive and negative test scenarios
+-Simulate international customer database
+
+Example
+Card Number	 Expiration Date	 CVV	 Cardholder Name	 Amount	 Address	 Denominations	 Credit_limit	 Linked account	Cart_Type	Expected_Result
+3.74245E+14	May-26	gvb	Andrew Hudson	72643	No:9812, Bolvarde	US Dollar	1 Million	19283183	Amex	Success
+5.42523E+15	Dec-26	wdv	David scott	1234	#12, Flat Number: 10, Chennai	INR	10 Lakh	12334545	Visa	Invalid exp. Date
+
+Output Format
+- Generate the data in both JSON and Dictionary formats
