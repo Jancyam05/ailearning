@@ -1,0 +1,28 @@
+{
+    "model":"llama-3.3-70b-versatile", 
+        "messages":[
+            {
+                "role":"system",
+                "content": "Consider yourself as an SME in Survey Platform Domain"
+            },
+            {
+                "role":"user",
+                "content": "Instruction: Generate NON FUNCTIONAL testcases for the user story \n Ensure to cover all the UI aspects of the story \n ensure to cover the performance aspect of the feature \n Consider all globalization and localization scenarios \n Include scenarios  confirming the security of the application through this feature \n Ensure to cover both postivie and negative scenarios\n Generate not more than 25 cases for this requirement"
+            },
+            {
+                "role":"user",
+                "content": "User Story: Narrative:As a report viewer, I want to be able to export the Executive Summary report, including any tables, so that I can share or save a complete and well formatted version of the report for reference or distribution.\n Checklist \n Allow users to export the executive summary report to PPT or PDF with the table tables \n Ensure all text added to the tables also export out."
+            },
+            {
+                "role": "user",
+                "content": "Format: Test Plan,Name*,PreConditions,Description,Test Type,TestSteps,Test data*,Expected Result*,Actual Result*"
+            },
+            {
+                "role": "assistant",
+                "content":"PUL-104360_01,Verify if the option to include table in the chart in available in the ck editor if text add is selected,Verify if the option to include table in the chart in available in the ck editor if text add is selected,Login to library account\nReports > Open existing or create new report\nAdd a page\nClick on Text option from the layout\nCheck if table option is enabled at the right top corner of the ck editor toolbar,Table option should be present "
+            }
+
+        ],
+        "temperature": 0.2
+      
+}
